@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+</head>
+<body>
+<script>
+  "use strict"
+    var a = 1, b = 1, c, d;
+    c = ++a; alert(c); // 2 присваивание значения после инкрементации
+    d = b++; alert(d); // 1 присваивание значения до инкрементации
+    c = (2+ ++a);
+    //alert(c);  5 a в начале равно 2 перед сложение инкрементация переменной итого 2 + 3 = 5
+    d = (2+ b++);
+    //alert(d); 4 b в начале равно 2 инкрементация после сложения итого 2 + 2 = 4
+    //alert(a); 3 а и b были инрементированы дважды
+    //alert(b); 3
+</script>
+<script>
+  "use strict"
+  var a2 = 2;
+  var x = 1 + (a2 *= 2);// 1 + (2 * 2) = 5
+</script>
+<script>
+  "use strict"
+  console.log('task 3');
+  let a3 = Math.floor(Math.random() * 10) - 5;
+  let b3 = Math.floor(Math.random() * 10) - 5;
+  console.log('a is ' + a3 + ' b is ' + b3);
+  if(a3 > 0 && b3 > 0){
+    console.log(a3 - b3);
+  } else if(a3 < 0 && b3 < 0){
+    console.log(a3 * b3);
+  } else {
+    console.log(a3 + b3);
+  }
+</script>
+<script>
+  "use strict"
+  console.log('task 4');
+  let a4 = +prompt ('Введите число от 1 до 15');
+  switch (a4) {
+	case 1:
+      alert ( 'Ваше число 1');
+	  break;
+	case 2:
+      alert ( 'Ваше число 2');
+	  break;
+	case 3:
+	  alert ( 'Ваше число 3');
+      break;
+	case 4:
+	  alert ( 'Ваше число 4');
+	  break;
+	case 5:
+	  alert ( 'Ваше число 5');
+	  break;
+	case 6:
+	  alert ( 'Ваше число 6');
+	  break;
+	case 7:
+	  alert ( 'Ваше число 7');
+	  break;
+	case 8:
+	  alert ( 'Ваше число 8');
+	  break;
+	case 9:
+	  alert ( 'Ваше число 9');
+	  break;
+	case 10:
+	  alert ( 'Ваше число 10');
+	  break;
+	case 11:
+	  alert ( 'Ваше число 11');
+	  break;
+	case 12:
+	  alert ( 'Ваше число 12');
+	  break;
+	case 13:
+	  alert ( 'Ваше число 13');
+	  break;
+	case 14:
+	  alert ( 'Ваше число 14');
+	  break;
+	case 15:
+	  alert ( 'Ваше число 15');
+	  break;
+  }
+	</script>
+<script>
+  "use strict"
+  console.log('task 5');
+
+  function plus(a, b) {
+    return a + b;
+  }
+  function minus(a, b) {
+    return a - b;
+  }
+  function div(a, b) {
+    return a / b;
+  }
+  function multiply(a, b) {
+    return a * b;
+  }
+</script>
+<script>
+  "use strict"
+  console.log('task 6');
+  function mathOperation(arg1, arg2, operation) {
+    switch(operation){
+      case 'сложение':
+        return arg1 + arg2;
+        break;
+      case 'вычитание':
+        return arg1 - arg2;
+        break;
+      case 'деление':
+        return arg1 / arg2;
+        break;
+      case 'умножение':
+        return arg1 * arg2;
+        break;
+      default:
+        return null;
+    }
+  }
+</script>
+</body>
+</html>
